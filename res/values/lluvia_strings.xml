@@ -57,4 +57,7 @@
     <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 
     <string name="wireless_charging_sounds_title">Wireless charging sounds</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>

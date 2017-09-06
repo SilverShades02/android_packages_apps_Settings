@@ -24,6 +24,13 @@
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
+     <!-- Feature Reset -->
+    <string name="reset_all_settings">RESET ALL</string>
+    <string name="reset_selected_settings">RESET SELECTED</string>
+    <string name="reset_settings_title">Feature reset</string>
+    <string name="reset_settings_summary">Reset feature preferences</string>
+    <string name="keywords_settings_reset">reset</string>
+
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>

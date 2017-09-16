@@ -55,8 +55,6 @@ import static android.app.NotificationManager.IMPORTANCE_UNSPECIFIED;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
-import static android.provider.Settings.System.NOTIFICATION_LIGHT_PULSE;
-
 public class ChannelNotificationSettings extends NotificationSettingsBase {
     private static final String TAG = "ChannelSettings";
 
@@ -226,14 +224,12 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         mCustomLight = (ColorPickerPreference) findPreference(KEY_CUSTOM_LIGHT);
         mLightOnTime =(CustomSeekBarPreference) findPreference(KEY_LIGHTS_ON_TIME);
         mLightOffTime = (CustomSeekBarPreference) findPreference(KEY_LIGHTS_OFF_TIME);
-        mLightOnZen = (SwitchPreference) findPreference(KEY_LIGHT_ON_ZEN);
         mLights.setDisabledByAdmin(mSuspendedAppsAdmin);
         mLights.setChecked(mChannel.shouldShowLights());
         //enable custom light prefs is light is enabled
         mCustomLight.setEnabled(!mLights.isDisabledByAdmin() && mChannel.shouldShowLights());
         mLightOnTime.setEnabled(!mLights.isDisabledByAdmin() && mChannel.shouldShowLights());
         mLightOffTime.setEnabled(!mLights.isDisabledByAdmin() && mChannel.shouldShowLights());
-        mLightOnZen.setEnabled(!mLights.isDisabledByAdmin() && mChannel.shouldShowLights());
 
         //light pref
         mLights.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -246,14 +242,43 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 mCustomLight.setEnabled(lights);
                 mLightOnTime.setEnabled(lights);
                 mLightOffTime.setEnabled(lights);
-                mLightOnZen.setEnabled(lights);
-                //enable NOTIFICATION_LIGHT_PULSE if the user wants to enable notification light for an app
-                //if he disables mLights, don't do anything (other apps may have it still enabled)
-                if (lights && Settings.System.getInt(mContext.getContentResolver(),
-                        NOTIFICATION_LIGHT_PULSE, 1) == 0) {
-                    Settings.System.putInt(mContext.getContentResolver(),
-                        NOTIFICATION_LIGHT_PULSE, 1);
-                }
+                return true;
+            }
+        });
+        //light color pref
+        int color = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : 0X00FFFFFF);
+        mCustomLight.setAlphaSliderEnabled(true);
+        mCustomLight.setNewPreviewColor(color);
+        mCustomLight.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int color = ((Integer) newValue).intValue();
+                mChannel.setLightColor(color);
+                mBackend.updateChannel(mPkg, mUid, mChannel);
+                return true;
+            }
+        });
+        //light on time pref
+        int lightOn = mChannel.getLightOnTime();
+        mLightOnTime.setValue(lightOn);
+        mLightOnTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int val = (Integer) newValue;
+                mChannel.setLightOnTime(val);
+                mBackend.updateChannel(mPkg, mUid, mChannel);
+                return true;
+            }
+        });
+        //light off time pref
+        int lightOff = mChannel.getLightOffTime();
+        mLightOffTime.setValue(lightOff);
+        mLightOffTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int val = (Integer) newValue;
+                mChannel.setLightOffTime(val);
+                mBackend.updateChannel(mPkg, mUid, mChannel);
                 return true;
             }
         });

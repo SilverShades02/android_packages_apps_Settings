@@ -99,6 +99,7 @@
     <string name="app_ops_cat_messaging">Messaging</string>
     <string name="app_ops_cat_media">Media</string>
     <string name="app_ops_cat_device">Device</string>
+    <string name="app_ops_cat_bootup">Bootup</string>
 
     <!-- [CHAR LIMIT=NONE] App ops labels -->
     <string name="app_ops_access_camera">camera</string>
@@ -167,6 +168,7 @@
     <string name="app_ops_picture_in_picture">pip</string>
     <string name="app_ops_app_start_foreground">start foreground</string>
     <string name="app_ops_answer_phone_calls">answer calls</string>
+    <string name="app_ops_boot_completed">auto start</string>
 
     <!-- [CHAR LIMIT=80]-->
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>

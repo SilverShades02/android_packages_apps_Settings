@@ -22,4 +22,7 @@
         <item name="android:windowBackground">@drawable/security_dialog_corners</item>
     </style>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
+
 </resources>

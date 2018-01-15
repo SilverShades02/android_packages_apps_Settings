@@ -51,4 +51,6 @@
     <!-- About phone screen, LLuviaOS device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string>
+
+    <string name="wireless_charging_sounds_title">Wireless charging sounds</string>
 </resources>

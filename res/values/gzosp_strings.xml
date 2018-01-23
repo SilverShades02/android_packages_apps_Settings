@@ -238,4 +238,8 @@
 
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
+
+    <!-- USB mode dialog -->
+    <string name="show_usb_mode_dialog_title">Show USB mode dialog</string>
+    <string name="show_usb_mode_dialog_summary">Show a dialog to choose which USB mode to use when required</string>
 </resources>

@@ -253,4 +253,6 @@
     <string name="show_enter_key_title">Show enter key</string>
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>	
 </resources>

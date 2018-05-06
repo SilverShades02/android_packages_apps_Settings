@@ -136,8 +136,7 @@ import org.lluvia.tormenta.Tormenta;
 import org.lluvia.tormenta.FlingSettings;
 import org.lluvia.tormenta.PulseSettings;
 import org.lluvia.tormenta.SmartbarSettings;
-import org.lluvia.tormenta.tabs.StockRoom;
-
+import org.lluvia.tormenta.tabs.Cloud;
 import org.lluvia.tormenta.fragments.NavbarSettings;
 import org.lluvia.tormenta.fragments.SmartPixels;
 

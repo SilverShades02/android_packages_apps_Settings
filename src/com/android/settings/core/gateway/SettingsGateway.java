@@ -264,7 +264,7 @@ public class SettingsGateway {
             Tormenta.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
-            StockRoom.class.getName(),
+            Cloud.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
             SmartPixels.class.getName()

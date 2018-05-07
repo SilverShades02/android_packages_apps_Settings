@@ -29,7 +29,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import org.candy.candyshop.fragments.AccentPicker;
+import org.lluvia.tormenta.fragments.AccentPicker;
 
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {

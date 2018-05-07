@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 CrDroid Android
- * Copyright (C) 2018 CandyRoms
+ * Copyright (C) 2018 LLuviaOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.candy;
+package com.android.settings.lluvia;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -50,17 +50,17 @@ import com.android.settings.Utils;
 import java.util.regex.Pattern;
 import android.util.Log;
 
-public class CandyAbout extends SettingsPreferenceFragment implements
+public class LluviaAbout extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
 	private static final String KEY_SLIM_OTA = "slimota";
-        private static final String LOG_TAG = "CandyAbout";
+        private static final String LOG_TAG = "LluviaAbout";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.candy_about);
+        addPreferencesFromResource(R.xml.lluvia_about);
 
    }
 
@@ -80,7 +80,7 @@ public class CandyAbout extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CANDY;
+        return MetricsEvent.LLUVIA;
     }
 }
 

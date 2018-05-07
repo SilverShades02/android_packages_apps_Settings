@@ -132,14 +132,14 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
-import org.candy.candyshop.CandyShop;
-import org.candy.candyshop.FlingSettings;
-import org.candy.candyshop.PulseSettings;
-import org.candy.candyshop.SmartbarSettings;
-import org.candy.candyshop.tabs.StockRoom;
+import org.lluvia.tormenta.Tormenta;
+import org.lluvia.tormenta.FlingSettings;
+import org.lluvia.tormenta.PulseSettings;
+import org.lluvia.tormenta.SmartbarSettings;
+import org.lluvia.tormenta.tabs.StockRoom;
 
-import org.candy.candyshop.fragments.NavbarSettings;
-import org.candy.candyshop.fragments.SmartPixels;
+import org.lluvia.tormenta.fragments.NavbarSettings;
+import org.lluvia.tormenta.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -262,7 +262,7 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
-            CandyShop.class.getName(),
+            Tormenta.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             StockRoom.class.getName(),
@@ -306,7 +306,7 @@ public class SettingsGateway {
             Settings.DateTimeSettingsActivity.class.getName(),
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
-            Settings.CandyShopActivity.class.getName(),
+            Settings.TormentaActivity.class.getName(),
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.StockRoomActivity.class.getName(),

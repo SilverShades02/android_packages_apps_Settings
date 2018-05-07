@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018 Candy Roms
+<!-- Copyright (C) 2018 LLuviaOS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -13,10 +13,10 @@
 
 	<PreferenceScreen
 	    xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:title="About Candy"
+	    android:title="About LLuvia"
 	    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-	<!-- Candy OTA -->
+	<!-- LLUVIA OTA -->
 	<!--<PreferenceScreen
 	    android:key="slimota"
 	    android:title="@string/slimota_title" >
@@ -29,31 +29,31 @@
 	<!-- Changelog -->
 	<PreferenceScreen
 	    android:key="translator"
-	    android:title="@string/changelog_candy_title"
-	    android:fragment="com.android.settings.candy.Changelog" />
+	    android:title="@string/changelog_lluvia_title"
+	    android:fragment="com.android.settings.lluvia.Changelog" />
 
-	<PreferenceScreen android:title="CandyRoms Build Server Downloads">
+	<PreferenceScreen android:title="LLuviaOS Build Server Downloads">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://download.bbqdroid.org" />
+	        android:data="soon TM" />
 	</PreferenceScreen>
 
-	<PreferenceScreen android:title="CandyRoms Gerrit">
+	<PreferenceScreen android:title="LLuviaOS Gerrit">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://gerrit.bbqdroid.org" />
+	        android:data="soon TM" />
 	</PreferenceScreen>
 
-	<PreferenceScreen android:title="CandyRoms GitHub">
+	<PreferenceScreen android:title="LLuvia GitHub">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://github.com/CandyRoms" />
+	        android:data="https://github.com/LLuviaOS" />
 	</PreferenceScreen>
 
-	<PreferenceScreen android:title="CandyDevices GitHub">
+	<PreferenceScreen android:title="LLuvia-Devices GitHub">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://github.com/CandyDevices" />
+	        android:data="https://github.com/LLuviaDevices" />
 	</PreferenceScreen>
 
 	<PreferenceScreen android:title="OpenGApps">
@@ -65,37 +65,27 @@
 	<PreferenceScreen android:title="Google+">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://plus.google.com/communities/108100228397827258211" />
+	        android:data="not yet :SOON" />
+	</PreferenceScreen>
+
+        <PreferenceScreen android:title="Telegram">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://t.me/LLuviaOs" />
 	</PreferenceScreen>
 
 	<!-- Developers -->
 	<PreferenceCategory
-	    android:key="category_candy_developers"
+	    android:key="category_lluvia_developers"
 	    android:title="Developers">
 
 	    <Preference
-	        android:title="Tony (@Gimmeitorilltell)"
-	        android:summary="DAMMIT BOBBY!" />
+	        android:title="Sriram Prakhya (@leodiram)"
+	        android:summary="StayHungry:StayFoolish" />
 
 	    <Preference
-	        android:title="Dan (@NoSpamDan)"
-	        android:summary="Is this thing on?" />
-
-	    <Preference
-	        android:title="Chad (@Chadouming)"
-	        android:summary="Don't effing reboot my server!" />
-
-	    <Preference
-	        android:title="Kevin (@CandyMaker_D)"
-	        android:summary="Oldest Guy with Candy" />
-
-	    <Preference
-	        android:title="Nick (@spetice)"
-	        android:summary="I need a build server!" />
-
-	    <Preference
-	        android:title="Sanjay (@Yaznas53)"
-	        android:summary="I'm not sure what he wants here..." />
+	        android:title="Srijith Bharathwaj (@srijith2001)"
+	        android:summary="well i am geek god" />
 	</PreferenceCategory>
 
 </PreferenceScreen>

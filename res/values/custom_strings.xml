@@ -419,18 +419,18 @@
 
     <string name="select_sim_for_sms">Select a SIM for SMS</string>
 
-    <!-- About Candy -->
-    <string name="candy_menu_about">About Candy</string>
+    <!-- About LLuvia -->
+    <string name="lluvia_menu_about">About Lluvia</string>
 
-    <!-- CandyOTA -->
-    <string name="slimota_title">Candy Updates</string>
+    <!-- LLUVIAOTA -->
+    <string name="slimota_title">Lluvia Updates</string>
 
-    <!-- About phone screen, Candy version -->
-    <string name="candy_version_title">Candy version</string>
-    <string name="candy_version_default">Unknown</string>
+    <!-- About phone screen, lluvia version -->
+    <string name="lluvia_version_title">Lluvia version</string>
+    <string name="lluvia_version_default">Unknown</string>
 
     <!-- Changelog -->
-    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_lluvia_title">Changelog</string>
     <string name="changelog_summary">See some of the recent commits.</string>
     <string name="changelog_error">Unable to load changelog</string>
 
@@ -454,7 +454,7 @@
     <string name="substratum_installed_title">Sweetener is unavailable because Substratum is installed. Uninstall it if you wish to use these Sweetened themes instead.</string>
     <string name="substratum_overlays_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
     <string name="systemui_theme_style_title">System theme</string>
-    <string name="systemui_theme_style_auto">Candy Wrapper based</string>
+    <string name="systemui_theme_style_auto">Lluvia Wrapper based</string>
     <string name="systemui_theme_style_light">White chocolate</string>
     <string name="systemui_theme_style_dark">Dark chocolate</string>
     <string name="systemui_theme_style_blackaf">Black licorice</string>

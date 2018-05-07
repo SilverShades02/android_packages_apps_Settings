@@ -193,7 +193,7 @@ public class Settings extends SettingsActivity {
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class SupportDashboardActivity extends SettingsActivity {}
-    public static class CandyShopActivity extends SettingsActivity {}
+    public static class TormentaActivity extends SettingsActivity {}
 
     // Abc Additions.
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }

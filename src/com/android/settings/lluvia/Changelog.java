@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 CrDroid Android
- * Copyright (C) 2018 CandyRoms
+ * Copyright (C) 2018 LLuviaOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.candy;
+package com.android.settings.lluvia;
 
 import android.app.Fragment;
 import android.os.Bundle;

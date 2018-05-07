@@ -17,16 +17,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!--Candy header -->
+        <!--lluvia header -->
         <PreferenceScreen
-                android:key="candy_header"
+                android:key="lluvia_header"
                 android:enabled="false"
-                android:layout="@layout/candy_header_about" />
+                android:layout="@layout/lluvia_header_about" />
 
         <PreferenceScreen
-               android:key="about_candy"
-               android:fragment="com.android.settings.candy.CandyAbout"
-               android:title="@string/candy_menu_about" />
+               android:key="about_lluvia"
+               android:fragment="com.android.settings.lluvia.LluviaAbout"
+               android:title="@string/lluvia_menu_about" />
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"

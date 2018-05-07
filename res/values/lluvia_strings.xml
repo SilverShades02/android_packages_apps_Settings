@@ -20,13 +20,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Rom version -->
-    <string name="rom_version_title">Candy version</string>
+    <string name="rom_version_title">Lluvia version</string>
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
-    <!-- CandyShop -->
-    <string name="candyshop_settings_activity">CandyShop</string>
-    <string name="candyshop_settings_activity_summary">Additional project settings</string>
+    <!-- Tormenta -->
+    <string name="tormenta_settings_activity">Tormenta</string>
+    <string name="tormenta_settings_activity_summary">Additional project settings</string>
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake up</string>

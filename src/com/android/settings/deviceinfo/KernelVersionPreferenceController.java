@@ -18,9 +18,8 @@ package com.android.settings.deviceinfo;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
 import android.content.Context;
-import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -48,6 +47,7 @@ public class KernelVersionPreferenceController extends AbstractPreferenceControl
     public void updateState(Preference preference) {
         super.updateState(preference);
         preference.setSummary(DeviceInfoUtils.getFormattedKernelVersion());
+        preference.setEnabled(true);
     }
 
     @Override

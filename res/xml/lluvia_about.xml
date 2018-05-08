@@ -84,8 +84,8 @@
 	        android:summary="StayHungry:StayFoolish" />
 
 	    <Preference
-	        android:title="Srijith Bharathwaj (@srijith2001)"
-	        android:summary="well i am geek god" />
+	        android:title="Srijith Bharadwaj (@Srijith2001)"
+	        android:summary="Well I am geek god" />
 	</PreferenceCategory>
 
 </PreferenceScreen>

@@ -3338,16 +3338,16 @@
                 android:resource="@string/rootmanagement_dashboard_summary" />
         </activity>
 
-        <!-- LLUVIA StockRoom settings -->
-        <activity android:name="Settings$StockRoomActivity"
-                android:label="@string/stockroom_settings_title"
+        <!-- LLUVIA Cloud settings -->
+        <activity android:name="Settings$CloudActivity"
+                android:label="@string/cloud_settings_title"
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="org.lluvia.tormenta.fragments.StockRoom" />
+                android:value="org.lluvia.tormenta.fragments.Cloud" />
         </activity>
 
         <!-- Smart Pixels -->

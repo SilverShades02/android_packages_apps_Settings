@@ -308,7 +308,7 @@ public class SettingsGateway {
             Settings.TormentaActivity.class.getName(),
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
-            Settings.StockRoomActivity.class.getName(),
+            Settings.CloudActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName()

@@ -72,11 +72,11 @@
         <PreferenceScreen
             android:key="notification_light"
             android:title="@string/notification_light_title"
-            android:fragment="org.candy.candyshop.fragments.batterylight.NotificationLightSettings" />
+            android:fragment="org.lluvia.tormenta.fragments.batterylight.NotificationLightSettings" />
 
         <PreferenceScreen
             android:key="charging_light"
             android:title="@string/battery_light_settings"
-            android:fragment="org.candy.candyshop.fragments.batterylight.BatteryLightSettings" />
+            android:fragment="org.lluvia.tormenta.fragments.batterylight.BatteryLightSettings" />
 
 </PreferenceScreen>

@@ -449,20 +449,20 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
-    <string name="applying_theme_toast">Applying Sweetener, please wait...</string>
-    <string name="theme_applied_toast">Sweetness applied!</string>
-    <string name="substratum_installed_title">Sweetener is unavailable because Substratum is installed. Uninstall it if you wish to use these Sweetened themes instead.</string>
+    <string name="applying_theme_toast">making Thunder, BE careful...</string>
+    <string name="theme_applied_toast">Thunder applied!</string>
+    <string name="substratum_installed_title">Thunder is unavailable because Substratum is installed. Uninstall it if you wish to use these THUNDERIZED themes instead.</string>
     <string name="substratum_overlays_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
     <string name="systemui_theme_style_title">System theme</string>
     <string name="systemui_theme_style_auto">Lluvia Wrapper based</string>
-    <string name="systemui_theme_style_light">White chocolate</string>
-    <string name="systemui_theme_style_dark">Dark chocolate</string>
-    <string name="systemui_theme_style_blackaf">Black licorice</string>
+    <string name="systemui_theme_style_light">White Tormenta</string>
+    <string name="systemui_theme_style_dark">Dark Tormenta</string>
+    <string name="systemui_theme_style_blackaf">Black Tormenta</string>
 
-    <string name="accent_picker_dialog_title">Select a Sweetener</string>
-    <string name="theme_accent_picker_title">Sweetener color</string>
-    <string name="theme_accent_picker_summary">Select system Sweetener</string>
-    <string name="theme_accent_picker_default">Un-sweeten (default)</string>
+    <string name="accent_picker_dialog_title">Select a Thunder</string>
+    <string name="theme_accent_picker_title">Thunder color</string>
+    <string name="theme_accent_picker_summary">Select Tormenta</string>
+    <string name="theme_accent_picker_default">Cold-Thunder (default)</string>
 
     <!-- Pixel color on sim card -->
     <string name="default_sim_color">Pixel</string>

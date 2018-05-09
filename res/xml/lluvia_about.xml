@@ -35,7 +35,7 @@
 	<PreferenceScreen android:title="LLuviaOS Build Server Downloads">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="soon TM" />
+	        android:data="https://sourceforge.net/projects/lluviaos-v-1-x/" />
 	</PreferenceScreen>
 
 	<PreferenceScreen android:title="LLuviaOS Gerrit">
@@ -65,7 +65,7 @@
 	<PreferenceScreen android:title="Google+">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="not yet :SOON" />
+	        android:data="https://plus.google.com/communities/100235695574462029127?sqinv=TlRpNXYxMUszMDBZdGNxUTVubDNSWkFqbWd4OFlB" />
 	</PreferenceScreen>
 
         <PreferenceScreen android:title="Telegram">
@@ -77,7 +77,7 @@
 	<!-- Developers -->
 	<PreferenceCategory
 	    android:key="category_lluvia_developers"
-	    android:title="Developers">
+	    android:title="LLuvia Creaters">
 
 	    <Preference
 	        android:title="Sriram Prakhya (@leodiram)"
@@ -89,7 +89,7 @@
 		
 	    <Preference
 	        android:title="Akshit Garg(@gargakshit)"
-	        android:summary="Follow ur destiny!" />
+	        android:summary="Minimalst kat(Desinger/UI)" />
 		
 	</PreferenceCategory>
 

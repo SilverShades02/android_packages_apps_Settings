@@ -86,6 +86,11 @@
 	    <Preference
 	        android:title="Srijith Bharadwaj (@Srijith2001)"
 	        android:summary="Well I am geek god" />
+		
+	    <Preference
+	        android:title="Akshit Garg(@gargakshit)"
+	        android:summary="Follow ur destiny!" />
+		
 	</PreferenceCategory>
 
 </PreferenceScreen>

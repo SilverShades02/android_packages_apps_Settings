@@ -66,7 +66,6 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
     private static final String KEY_RINGTONE = "ringtone";
     private static final String KEY_IMPORTANCE = "importance";
     private static final String KEY_ADVANCED = "advanced";
-    private static final String KEY_LIGHT_ON_ZEN = "show_light_on_zen";
     private static final String KEY_LIGHTS_CAT = "light_customization";
 
     private Preference mImportance;
@@ -80,7 +79,6 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
     private NotificationChannelGroup mChannelGroup;
     private EntityHeaderController mHeaderPref;
     private PreferenceGroup mAdvanced;
-    private SwitchPreference mLightOnZen;
     private PreferenceGroup mLightsCategory;
 
     private int mLedColor = 0;
@@ -260,45 +258,6 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         });
         //light on time pref
         int lightOn = mChannel.getLightOnTime();
-        mLightOnTime.setValue(lightOn);
-        mLightOnTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                int val = (Integer) newValue;
-                mChannel.setLightOnTime(val);
-                mBackend.updateChannel(mPkg, mUid, mChannel);
-                return true;
-            }
-        });
-        //light off time pref
-        int lightOff = mChannel.getLightOffTime();
-        mLightOffTime.setValue(lightOff);
-        mLightOffTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                int val = (Integer) newValue;
-                mChannel.setLightOffTime(val);
-                mBackend.updateChannel(mPkg, mUid, mChannel);
-                return true;
-            }
-        });
-        //light color pref
-        int defaultLightColor = getResources().getColor(com.android.internal.R.color.config_defaultNotificationColor);
-        mCustomLight.setDefaultColor(defaultLightColor);
-        int color = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
-        mCustomLight.setAlphaSliderEnabled(true);
-        mCustomLight.setNewPreviewColor(color);
-        mCustomLight.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                int color = ((Integer) newValue).intValue();
-                mChannel.setLightColor(color);
-                mBackend.updateChannel(mPkg, mUid, mChannel);
-                return true;
-            }
-        });
-        //light on time pref
-        int lightOn = mChannel.getLightOnTime();
         int defaultLightOn = getResources().getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOn);
         mLightOnTime.setDefaultValue(defaultLightOn);
@@ -325,28 +284,6 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 int val = (Integer) newValue;
                 mChannel.setLightOffTime(val);
-                mBackend.updateChannel(mPkg, mUid, mChannel);
-                return true;
-            }
-        });
-        //light on zen pref
-        mLightOnZen.setChecked(mChannel.shouldLightOnZen());
-        mLightOnZen.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                final boolean show = (Boolean) newValue;
-                mChannel.setLightOnZen(show);
-                mBackend.updateChannel(mPkg, mUid, mChannel);
-                return true;
-            }
-        });
-        //light on zen pref
-        mLightOnZen.setChecked(mChannel.shouldLightOnZen());
-        mLightOnZen.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-            @Override
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-                final boolean show = (Boolean) newValue;
-                mChannel.setLightOnZen(show);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
                 return true;
             }
@@ -572,3 +509,4 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         }
     }
 }
+

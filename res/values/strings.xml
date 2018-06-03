@@ -9064,4 +9064,9 @@
     <!-- Battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
     <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+
+    <!-- OTA -->
+    <string name="lluviaupdate_settings_title">LLuviaOS Thunder Fetcher</string>
+    <string name="lluviaupdate_settings_summary">Check for update</string>
+
 </resources>

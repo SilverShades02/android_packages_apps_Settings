@@ -28,6 +28,15 @@
                android:fragment="com.android.settings.lluvia.LluviaAbout"
                android:title="@string/lluvia_menu_about" />
 
+         <!-- OTA -->
+         <Preference android:key="lluvia_updates"
+             android:title="@string/lluviaupdate_settings_title"
+             android:summary="@string/lluviaupdate_settings_summary">
+             <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.lluvia.ota"
+                 android:targetClass="com.lluvia.ota.MainActivity" />
+         </Preference>
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"

@@ -448,7 +448,7 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
-    <string name="applying_theme_toast">making Thunder, BE careful...</string>
+    <string name="applying_theme_toast">Making Thunder, BE careful...</string>
     <string name="theme_applied_toast">Thunder applied!</string>
     <string name="substratum_installed_title">Thunder is unavailable because Substratum is installed. Uninstall it if you wish to use these THUNDERIZED themes instead.</string>
     <string name="substratum_overlays_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>

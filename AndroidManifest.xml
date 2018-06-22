@@ -3455,5 +3455,8 @@
         <!-- Battery and notification lights -->
         <activity android:name="org.lluvia.tormenta.fragments.batterylight.NotificationLightSettings" />
         <activity android:name="org.lluvia.tormenta.fragments.batterylight.BatteryLightSettings" />
+
+         <!-- Recents hide -->
+        <activity android:name="org.lluvia.tormenta.HAFRAppListActivity" />
     </application>
 </manifest>

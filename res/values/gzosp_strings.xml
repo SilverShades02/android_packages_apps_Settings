@@ -236,9 +236,6 @@
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
 
-    <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Screenshot sound</string>
-
     <!-- USB mode dialog -->
     <string name="show_usb_mode_dialog_title">Show USB mode dialog</string>
     <string name="show_usb_mode_dialog_summary">Show a dialog to choose which USB mode to use when required</string>

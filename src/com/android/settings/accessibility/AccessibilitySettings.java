@@ -622,7 +622,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
 
     private void updateMasterMono() {
         final boolean masterMono = Settings.System.getIntForUser(
-                getContentResolver(), Settings.System.MASTER_MONO,x
+                getContentResolver(), Settings.System.MASTER_MONO,
                 0 /* default */, UserHandle.USER_CURRENT) == 1;
         mToggleMasterMonoPreference.setChecked(masterMono);
     }
